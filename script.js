@@ -1,11 +1,22 @@
 function insert_Row() {
-    //Write your code here
-  let sample=document.getElementById('sampleTable')
-	  sample.innerHTML+=`<tr><td>NewCell1</td> 
-		<td>NewCell2</td></tr> <tr><td>Row1 cell1</td> 
-		<td>Row1 cell2</td></tr> 
-		<tr><td>Row2 cell1</td> 
-		<td>Row2 cell2</td></tr>`
-	
-  
+    let i = 1; // Declare i outside the function
+    let sample = document.getElementById('sampleTable');
+
+    // Create a new row
+    let newRow = document.createElement('tr');
+    
+    // Create left cell with "New Cell1"
+    let leftCell = document.createElement('td');
+    leftCell.textContent = 'New Cell1';
+    
+    // Create right cell with "New Cell2"
+    let rightCell = document.createElement('td');
+    rightCell.textContent = 'New Cell2';
+
+    // Append cells to the row
+    newRow.appendChild(leftCell);
+    newRow.appendChild(rightCell);
+
+    // Add the row to the table
+    sample.appendChild(newRow);
 }
