@@ -1,7 +1,7 @@
 function insert_Row() {
     //Write your code here
   let sample=document.getElementById('sampleTable')
-	  sample.innerHTML=`<tr><td>NewCell1</td> 
+	  sample.innerHTML+=`<tr><td>NewCell1</td> 
 		<td>NewCell2</td></tr> <tr><td>Row1 cell1</td> 
 		<td>Row1 cell2</td></tr> 
 		<tr><td>Row2 cell1</td> 
