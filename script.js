@@ -18,5 +18,9 @@ function insert_Row() {
     newRow.appendChild(rightCell);
 
     // Add the row to the table
-    sample.appendChild(newRow);
+    sample.innerHTML=`${newRow.innerHTML}
+	<tr><td>Row1 cell1</td> 
+		<td>Row1 cell2</td></tr> 
+		<tr><td>Row2 cell1</td> 
+		<td>Row2 cell2</td></tr> `;
 }
